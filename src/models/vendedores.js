@@ -6,6 +6,18 @@ const vendedoresSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    categoria:{
+        type: String,
+        required: true,
+    },
+    segmento:{
+        type: String,
+        required: true,
+    },
+    telefone:{
+        type: String,
+        required:true
+    },
     cadastradoEm: {
         type: Date,
         required: true,

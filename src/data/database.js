@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const connect = () => {mongoose.connect("mongodb://localhost:27027/vendedores-db",{
+const connect = () => {mongoose.connect("mongodb://localhost:27017/roseiras-db",{
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
@@ -8,3 +8,5 @@ const connect = () => {mongoose.connect("mongodb://localhost:27027/vendedores-db
  .catch(err => console.err)
 
 }
+
+module.exports = {connect}
