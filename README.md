@@ -30,13 +30,11 @@ E essa foi a forma de sustento de algumas famílias devido ao desemprego e redu�
 
 ## **Funcionalidades**
 
-- [x] Cadastro de Animais, de Tutores e Abrigos na aplicação
-- [X] Lista de todos os Animais, Tutores e Abrigos cadastrados
-- [X] Busca de Animais que estão acolhidos, por abirgo
-- [X] Busca de Animais, Abrigos e tutores por ID
-- [X] Busca de Animais e Abrigos por bairro
-- [X] Atualização de cadastro de Animais, Abrigos e Tutores
-- [X] Remoção dos cadastros dos Animais, Abrigos e Tutores
+- [x] Cadastro de produtos, vendedores, produtos e pedidos;
+- [X] Lista de todos os vendedores, produtos e pedidos cadastrados;
+- [x] Busca de vendedores, produtos e pedidos por ID selecionado;
+- [X] Atualização de cadastro de vendedores, produtos e pedidos;
+- [X] Remoção dos cadastros dos vendedores, produtos e pedidos;
 
 ## **Dependências, tecnologias e bibliotecas**
 
