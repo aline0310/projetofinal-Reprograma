@@ -66,7 +66,7 @@ const deletePurchaseById = async (req, res) => {
         purchase.phoneNumber = req.body.phoneNumber;
       }
       if (req.body.tower != null) {
-        purchasetower = req.body.tower;
+        purchase.tower = req.body.tower;
       }
       if (req.body.apartment != null) {
         purchase.apartment = req.body.apartment;
@@ -87,9 +87,6 @@ const deletePurchaseById = async (req, res) => {
         purchase.seller = req.body.seller;
       }
       if(req.body.registeredIn != null){
-        purchase.registeredIn = req.body.registeredIn;
-      }
-      if (req.body.registeredIn != null) {
         purchase.registeredIn = req.body.registeredIn;
       }
       const updatedPurchase = await purchase.save();

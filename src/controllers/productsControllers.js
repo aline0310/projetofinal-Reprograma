@@ -13,15 +13,6 @@ const getProductById = async (req, res) => {
     res.status(200).json(product)
 };
 
-const getProductsByName = async (req, res) => {
-  const product = await Products.findByName(req.params.name)
-  res.status(200).json(product);
-};
-
-const getPurchaseBySeller = async (req, res) => {
-  const product = await Products.findBySeller(req.params.seller)
-  res.status(200).json(product);
-};
 
 const CreateNewProduct = async (req, res) => {
     const product = new Products ({
@@ -90,4 +81,4 @@ const deleteProductById = async (req, res) => {
     }
   };
 
-module.exports = {getAllProducts,getProductsByName, CreateNewProduct, getProductById,getAllProducts, deleteProductById, updateProductById, getPurchaseBySeller }
+module.exports = {getAllProducts, CreateNewProduct, getProductById,getAllProducts, deleteProductById, updateProductById,}
