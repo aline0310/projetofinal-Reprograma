@@ -1,24 +1,28 @@
 const mongoose = require("mongoose");
 
-const produtosSchema = new mongoose.Schema({
+const sellersSchema = new mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
-    nome:{
+    name:{
         type: String,
         required: true,
     },
-    categoria:{
+    category:{
         type: String,
         required: true,
     },
-    segmento:{
+    segment:{
         type: String,
         required: true,
     },
-    cadastradoEm: {
+    phoneNumber:{
+        type: String,
+        required:true,
+    },
+    registeredIn: {
         type: Date,
         required: true,
         default: new Date
     }
 })
 
-module.exports = mongoose.model('produtos', produtosSchema)
+module.exports = mongoose.model('sellers', sellersSchema)

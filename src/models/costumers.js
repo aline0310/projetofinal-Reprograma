@@ -1,28 +1,28 @@
 const mongoose = require("mongoose");
 
-const vendedoresSchema = new mongoose.Schema({
+const costumersSchema = new mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
-    nome:{
+    name:{
         type: String,
         required: true,
     },
-    categoria:{
+    phoneNumber:{
         type: String,
         required: true,
     },
-    segmento:{
+    tower:{
         type: String,
         required: true,
     },
-    telefone:{
-        type: String,
-        required:true
+    apartment:{
+        type:String,
+        required:true,
     },
-    cadastradoEm: {
+    registeredIn:{
         type: Date,
         required: true,
         default: new Date
     }
 })
 
-module.exports = mongoose.model('vendedores', vendedoresSchema)
+module.exports = mongoose.model('costumers', costumersSchema)
